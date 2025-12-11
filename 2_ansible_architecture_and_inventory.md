@@ -13,7 +13,7 @@
   - `10.0.0.1`  
   - `10.0.0.2`  
   - `10.0.0.3`  
-- Tells Ansible **which** machines to configure. [web:55]  
+- Tells Ansible **which** machines to configure.  
 
 2️⃣ **Ansible Server / Control Node**
 
@@ -22,7 +22,7 @@
   - Reads inventory  
   - Runs Playbooks / ad-hoc commands  
   - Connects to servers via SSH/WinRM  
-  - Installs/configures software on targets [web:41][web:42][web:43][web:53]  
+  - Installs/configures software on targets  
 
 3️⃣ **Playbook File**
 
@@ -30,7 +30,7 @@
   - install java  
   - install nginx  
   - install maven  
-- Applied to hosts/groups from inventory. [web:48][web:56]  
+- Applied to hosts/groups from inventory.  
 
 **Flow**
 
@@ -95,7 +95,7 @@ ansible_ssh_private_key_file=/path/to/<key-pair-name>.pem
 
 - `servers` → group name (can be any name)  
 - `ansible_user=ubuntu` → default Ubuntu user  
-- `ansible_ssh_private_key_file` → path to `.pem` key [web:46][web:54][web:55]  
+- `ansible_ssh_private_key_file` → path to `.pem` key  
 
 ### STEP 6 – Test connectivity with ping module
 
@@ -103,7 +103,7 @@ ansible servers -i inventory -m ping
 
  
 
-- On success, response = `"pong"` from each host. [web:47][web:55]  
+- On success, response = `"pong"` from each host.  
 
 ---
 
