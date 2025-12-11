@@ -40,7 +40,7 @@ mode: '704'
 
  
 
-- Uses `apt` to install nginx and `service` to start/enable it. [web:49][web:52][web:57][web:60]  
+- Uses `apt` to install nginx and `service` to start/enable it.   
 
 **Related SSH note from your notes:**
 
@@ -66,7 +66,7 @@ shell: /bin/bash
 
  
 
-- Uses `ansible.builtin.user` to create user `keithan` with home directory. [web:51][web:59]  
+- Uses `ansible.builtin.user` to create user `keithan` with home directory.   
 
 ---
 
@@ -90,7 +90,7 @@ state: present
 
  
 
-- Single task installing multiple packages via `apt`. [web:49]  
+- Single task installing multiple packages via `apt`.   
 
 ---
 
@@ -134,7 +134,7 @@ ansible-playbook -i inventory <playbook-name>.yaml
 
  
 
-- Executes tasks sequentially against all hosts in specified inventory group. [web:48][web:56]  
+- Executes tasks sequentially against all hosts in specified inventory group.   
 
 ---
 
