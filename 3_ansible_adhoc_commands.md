@@ -11,7 +11,7 @@
 - Useful for:
   - Quick checks
   - One-time changes
-  - Testing connectivity / modules [web:47][web:55]  
+  - Testing connectivity / modules   
 
 ---
 
@@ -28,10 +28,10 @@ ansible <groupname> -i inventory -m <module> -a "<arguments>"
 
 Common modules:
 
-- `ansible.builtin.apt` → manage packages (Debian/Ubuntu) [web:49][web:57]  
-- `ansible.builtin.file` → manage files/directories & permissions [web:50][web:58]  
-- `ansible.builtin.service` → manage services [web:52][web:60]  
-- `ansible.builtin.user` → manage users [web:51][web:59]  
+- `ansible.builtin.apt` → manage packages (Debian/Ubuntu)   
+- `ansible.builtin.file` → manage files/directories & permissions   
+- `ansible.builtin.service` → manage services   
+- `ansible.builtin.user` → manage users   
 
 ---
 
@@ -59,7 +59,7 @@ ansible servers -i inventory -m ansible.builtin.file
   - owner → `ubuntu`  
   - group → `devops`  
   - mode → `600`  
-- `--become` → elevate to root for ownership changes. [web:50][web:58]  
+- `--become` → elevate to root for ownership changes.   
 
 ---
 
@@ -70,7 +70,7 @@ ansible servers -i inventory -m ansible.builtin.file
 
  
 
-- Creates `/home/ubuntu/king` directory with `755` permissions. [web:50][web:58]  
+- Creates `/home/ubuntu/king` directory with `755` permissions.   
 
 ---
 
@@ -81,7 +81,7 @@ ansible servers -i inventory -m ansible.builtin.apt
 
  
 
-- Installs `openjdk-17-jdk` on all hosts in `servers`. [web:49]  
+- Installs `openjdk-17-jdk` on all hosts in `servers`.   
 
 ---
 
@@ -111,4 +111,4 @@ ansible-playbook -i inventory <playbook-file>.yaml
  
 
 Ad-hoc → quick one-off command.  
-Playbook → repeatable, structured automation. [web:48][web:56]  
+Playbook → repeatable, structured automation.   
